@@ -10,13 +10,15 @@
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta property="og:url" content="https://abdullahmariam.vercel.app/">
 <meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#fdf4f5;--ink:#6b4a52;--rose:#c98a9b;--card:#fff9fa;--soft:#f6d9df}
 *{box-sizing:border-box}
 html,body{margin:0}
 body{background:radial-gradient(circle at 20% 0,#fde9ed,transparent 50%),radial-gradient(circle at 100% 100%,#fbe3e8,transparent 50%),var(--bg);color:var(--ink);font-family:'Cormorant Garamond',Georgia,serif;text-align:center;line-height:1.6;padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}
 .script{font-family:'Great Vibes','Brush Script MT',cursive;font-weight:400}
+.cap{font-size:1.45em;line-height:.7}
+.ar{font-family:'Amiri','Traditional Arabic',serif;direction:rtl}
 .small{letter-spacing:.3em;text-transform:uppercase;font-size:12px;color:var(--rose)}
 #seal{position:fixed;inset:0;z-index:10;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;cursor:pointer;transition:opacity .8s,visibility .8s}
 #seal.gone{opacity:0;visibility:hidden}
@@ -42,30 +44,20 @@ hr{border:0;height:1px;background:linear-gradient(90deg,transparent,var(--rose),
 .cd span{display:block;font-size:34px;font-weight:600}
 .cd small{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--rose)}
 #mus{position:fixed;top:calc(12px + env(safe-area-inset-top,0px));right:12px;z-index:5;background:var(--card);border:1px solid var(--rose);color:var(--rose);border-radius:20px;padding:6px 14px;font:inherit;cursor:pointer}
-#bird{position:fixed;z-index:9;left:0;top:58%;width:110px;pointer-events:none;opacity:0;transform:translate(-160px,0)}
-#bird.fly{animation:fly 8s ease-in-out forwards}
-@keyframes fly{0%{opacity:1;transform:translate(-160px,0) rotate(-8deg)}25%{transform:translate(28vw,-22vh) rotate(-4deg)}50%{transform:translate(55vw,-10vh) rotate(4deg)}75%{transform:translate(82vw,-30vh) rotate(-6deg)}100%{opacity:1;transform:translate(calc(100vw + 160px),-44vh) rotate(-10deg)}}
-.w{transform-origin:55px 44px;animation:flap .32s ease-in-out infinite alternate}
-.w2{animation-delay:.05s;opacity:.8}
-@keyframes flap{from{transform:rotate(-30deg) scaleY(1)}to{transform:rotate(22deg) scaleY(.7)}}
-@media (prefers-reduced-motion:reduce){#bird{display:none}}
-</style>
+@media (prefers-reduced-motion:reduce){</style>
 </head>
 <body>
 <audio id="a" src="song.mp3" loop preload="auto"></audio>
-<div id="seal"><p class="small">You are invited</p><h2 class="names script">Abdullah &amp; Mariam</h2><div class="env"><div class="flap"></div><div class="pocket"></div><div class="wax">A&amp;M</div></div><p class="small">Tap the envelope to open</p><p class="small" style="opacity:.7">Best with sound</p></div>
+<div id="seal"><p class="small">You are invited</p><h2 class="names script"><span class="cap">A</span>bdullah &amp; <span class="cap">M</span>ariam</h2><div class="env"><div class="flap"></div><div class="pocket"></div><div class="wax">A&amp;M</div></div><p class="small">Tap the envelope to open</p><p class="small" style="opacity:.7">Best with sound</p></div>
 <button id="mus" aria-label="music">♪ Music</button>
-<svg id="bird" viewBox="0 0 120 80" aria-hidden="true">
-<path class="w w2" d="M50 42 Q40 2 70 6 Q68 28 62 46Z" fill="#e9a3b4"/>
-<path d="M22 46 L2 36 L8 52Z" fill="#e58fa5"/>
-<path d="M20 45 Q50 25 88 40 Q72 62 40 58Z" fill="#ec9bb0"/>
-<circle cx="88" cy="36" r="11" fill="#ec9bb0"/>
-<path d="M98 34 L112 38 L98 42Z" fill="#f2b36b"/>
-<circle cx="91" cy="33" r="2" fill="#5a2f3b"/>
-<path class="w" d="M50 42 Q55 2 84 10 Q74 30 64 46Z" fill="#f7c0cd"/>
-</svg>
 <main>
 <img class="inv" alt="Abdullah &amp; Mariam wedding invitation" src="invite.jpg">
+<section>
+<p class="ar" style="font-size:24px;margin:0">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+<hr>
+<p class="ar" style="font-size:24px;line-height:2.1">﴿وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً﴾<br><small>الروم ٢١</small></p>
+<p><i>And He has placed between you compassion and mercy. (30:21)</i></p>
+</section>
 <section>
 <h2>The Details</h2>
 <div class="card"><p class="small">Date</p><b>Saturday 31 October 2026</b></div>
@@ -81,19 +73,18 @@ hr{border:0;height:1px;background:linear-gradient(90deg,transparent,var(--rose),
 <section>
 <p class="small">The Venue</p>
 <h2>Royal Plaza</h2>
-<a class="btn" target="_blank" rel="noopener" href="https://maps.app.goo.gl/rcRLwY1Tk7h8rrhF9?g_st=iw">OPEN IN MAPS</a>
+<a class="btn" target="_blank" rel="noopener" href="https://maps.app.goo.gl/mZ42Moh8V575dPDM7?g_st=iw">OPEN IN MAPS</a>
 </section>
 <hr>
 <p class="small">With all our love</p>
 <p>Thank you for being part of our story.</p>
-<h2 class="script" style="font-size:52px">Abdullah &amp; Mariam</h2>
+<h2 class="script" style="font-size:52px"><span class="cap">A</span>bdullah &amp; <span class="cap">M</span>ariam</h2>
 </main>
 <script>
-var a=document.getElementById('a'),seal=document.getElementById('seal'),mus=document.getElementById('mus'),bird=document.getElementById('bird');
+var a=document.getElementById('a'),seal=document.getElementById('seal'),mus=document.getElementById('mus');
 function play(){a.play().catch(function(){})}
 seal.onclick=function(){seal.classList.add('open');play();
-setTimeout(function(){seal.classList.add('gone')},1000);
-setTimeout(function(){bird.classList.add('fly')},1500)};
+setTimeout(function(){seal.classList.add('gone')},1000)};
 mus.onclick=function(){a.paused?play():a.pause()};
 var t=new Date('2026-10-31T19:00:00+02:00');
 function tick(){var x=Math.max(0,t-new Date()),p=function(n){return String(n).padStart(2,'0')};
